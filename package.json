@@ -2,7 +2,6 @@
   "name": "clinode",
   "version": "0.0.1",
   "description": "clinode CLI",
-  "private": true,
   "bin": {
     "cli-node": "bin/cli-node"
   },
