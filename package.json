@@ -1,5 +1,5 @@
 {
-  "name": "clinode",
+  "name": "bp-node",
   "version": "0.0.1",
   "description": "clinode CLI",
   "bin": {
