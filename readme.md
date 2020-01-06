@@ -2,24 +2,29 @@
 
 A CLI for cli-node.
 
-## Customizing your CLI
+## CLI
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
+Check out the documentation at https://github.com/adrianosilvareis/cli-node.
 
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
+## Commands
 
 ```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+$ cli-node my-project -m 'message of my fist commit'
+$ cd my-project
+$ yarn install or npm install
+$ yarn test
+$ yarn start
 ```
+
+## options
+
+```schell
+cli-node my-project --koa //for koa starter project
+cli-node my-project --express //TODO: not implemented -- for express starter project
+```
+
 
 # License
 
-MIT - see LICENSE
+MIT - see [LICENSE](LICENSE)
 

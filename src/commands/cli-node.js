@@ -6,13 +6,22 @@ const command = {
     const repo = parameters.first
     const options = parameters.options
     
+    let branch = 'master'
+    branch = options.koa ? 'koa' : branch
+    branch = options.express ? 'express' : branch
+
+    if (options.express) {
+      print.error('this options not implemented')
+      return
+    }
+    
     if(!repo) {
       print.error('project name must be specified')
       return
     }
 
     print.info('baixando repositorio...')
-    await system.exec(`git clone https://github.com/adrianosilvareis/node_api_boilerplate ${repo}`)
+    await system.exec(`git clone https://github.com/adrianosilvareis/node_api_boilerplate --branch ${branch} ${repo}`)
     await filesystem.remove(`./${repo}/.git`)
 
     print.info('resolvendo coisas pendentes...')
