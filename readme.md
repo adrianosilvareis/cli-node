@@ -6,6 +6,12 @@ A CLI for cli-node.
 
 Check out the documentation at https://github.com/adrianosilvareis/cli-node.
 
+## install
+```schell
+$ yarn add global bp-node
+$ npm install -g bp-node
+```
+
 ## Commands
 
 ```shell
